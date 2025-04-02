@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(232, 232, 232, 0.349);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.beginning {
+    width: 100%;
+    height: 60px;
+    background-color: #4338CA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.beginning .content {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.beginning .head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.beginning button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.beginning button:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.beginning a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+/* [Rest of your original CSS remains exactly the same] */
+.tbody {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.tbody .main {
+    max-width: 768px;
+    width: 100%;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4338CA;
+    color: white;
+    gap: 7px;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* [Continue with all your existing CSS classes exactly as they were] */
+
+@media screen and (max-width:768px) {
+    .beginning {
+        padding: 0 15px;
+    }
+    .beginning .content {
+        font-size: 1rem;
+    }
+    /* [Rest of your original media queries] */
+}
